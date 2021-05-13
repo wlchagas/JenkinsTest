@@ -1,9 +1,9 @@
 pipeline {
-    agent { docker { image 'node:14-alpine' } }
+    agent any
     stages {
-        stage('build') {
+        stage('run ipconfig') {
             steps {
-                sh 'npm --version'
+                bat 'ipconfig'
             }
         }
     }
