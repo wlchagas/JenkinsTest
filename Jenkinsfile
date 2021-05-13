@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('run ipconfig') {
             steps {
-                bat 'ipconfig'
+                bat 'cmd'
             }
         }
     }
